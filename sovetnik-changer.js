@@ -1,4 +1,4 @@
-export default function sovetnikChanger(backgroundColor, backgroundImage) {
+export default function sovetnikChanger({backgroundColor = '#fff', backgroundImage = ''} = {}) {
   const MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
   if (!MutationObserver) return;
 
@@ -10,9 +10,8 @@ export default function sovetnikChanger(backgroundColor, backgroundImage) {
       if (addedNode && (addedNode.nodeType === 1) && (addedNode.tagName === 'DIV') && addedNode.id && addedNode.className && (addedNode.id === addedNode.className)) {
         const firstNodeChild = addedNode.firstChild;
         if (firstNodeChild) {
-          if (!backgroundColor) backgroundColor = '#fff';
           let css = '.sovetnik-changer:after{content:""!important;position:absolute!important;top:0!important;right:0!important;left:0!important;bottom:-1px!important;z-index:2147483647!important;';
-          if (backgroundImage && (typeof backgroundImage === 'string')) css += 'background:' + backgroundColor + ' url("' + backgroundImage + '") center no-repeat/contain!important;cursor:pointer!important;}';
+          if (backgroundImage) css += 'background:' + backgroundColor + ' url("' + backgroundImage + '") center no-repeat/contain!important;cursor:pointer!important;}';
           else css += 'background-color:' + backgroundColor + '!important;cursor:default!important;}';
           const style = document.createElement('style');
           style.type = 'text/css';
