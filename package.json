@@ -1,0 +1,33 @@
+{
+  "name": "sovetnik-changer",
+  "version": "1.0.0",
+  "description": "Library paints yandex sovetnik or change it",
+  "main": "./sovetnik-changer.min.js",
+  "module": "./sovetnik-changer.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whooehoo/sovetnik-changer.git"
+  },
+  "keywords": [
+    "yandex",
+    "sovetnik",
+    "changer"
+  ],
+  "author": "whooehoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/whooehoo/sovetnik-changer/issues"
+  },
+  "homepage": "https://github.com/whooehoo/sovetnik-changer#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "unminified-webpack-plugin": "^1.4.2",
+    "webpack": "^3.10.0"
+  }
+}
