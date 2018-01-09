@@ -34,7 +34,7 @@ git clone git@github.com:whooehoo/sovetnik-changer.git
 
 ```js
 sovetnikChanger({
-  '#000'
+  backgroundColor: '#000'
 });
 ```
 
