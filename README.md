@@ -43,4 +43,4 @@ sovetnikChanger({
 Option | Default | Description
 ---------|-----------------------|---------
 `backgroundColor` | `#fff` | Background-color, which paint sovetnik 
-`backgroundImage` | `` | Url of background-image, which change sovetnik 
+`backgroundImage` | `''` | Url of background-image, which change sovetnik 
