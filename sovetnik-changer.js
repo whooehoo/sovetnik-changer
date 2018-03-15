@@ -10,9 +10,9 @@ export default function sovetnikChanger({backgroundColor = '#fff', backgroundIma
       if (addedNode && (addedNode.nodeType === 1) && (addedNode.tagName === 'DIV') && addedNode.id && addedNode.className && (addedNode.id === addedNode.className)) {
         const firstNodeChild = addedNode.firstChild;
         if (firstNodeChild) {
-          let css = '.sovetnik-changer:after{content:""!important;position:absolute!important;top:0!important;right:0!important;left:0!important;bottom:-1px!important;z-index:2147483647!important;';
-          if (backgroundImage) css += 'background:' + backgroundColor + ' url("' + backgroundImage + '") center no-repeat/contain!important;cursor:pointer!important;}';
-          else css += 'background-color:' + backgroundColor + '!important;cursor:default!important;}';
+          let css = '.sovetnik-changer{cursor:default!important;}.sovetnik-changer:after{content:""!important;position:absolute!important;top:0!important;right:0!important;left:0!important;bottom:-1px!important;z-index:2147483647!important;';
+          if (backgroundImage) css += 'background:' + backgroundColor + ' url("' + backgroundImage + '") center no-repeat!important;}';
+          else css += 'background-color:' + backgroundColor + '!important;}';
           const style = document.createElement('style');
           style.type = 'text/css';
           document.head.appendChild(style);

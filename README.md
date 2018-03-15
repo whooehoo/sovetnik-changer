@@ -27,7 +27,7 @@ git clone git@github.com:whooehoo/sovetnik-changer.git
 
 ```html
 <!-- HTML -->
-<script src="path/to/folder/sovetnik-changer/sovetnik-changer.min.js"></script>
+<script src="https://raw.githubusercontent.com/whooehoo/sovetnik-changer/master/sovetnik-changer.min.js"></script>
 ```
 
 ## Example:
@@ -42,5 +42,5 @@ sovetnikChanger({
 
 Option | Default | Description
 ---------|-----------------------|---------
-`backgroundColor` | `#fff` | Background-color, which paint sovetnik 
-`backgroundImage` | `''` | Url of background-image, which change sovetnik 
+`backgroundColor` | `#fff` | Color, which paint sovetnik 
+`backgroundImage` | `''` | Url of pic, which centered on sovetnik 
