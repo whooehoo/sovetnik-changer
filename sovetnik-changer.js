@@ -7,7 +7,7 @@ export default function sovetnikChanger({backgroundColor = '#fff', backgroundIma
       if (!mutation.addedNodes.length) return;
       const addedNode = mutation.addedNodes[0];
 
-      if (addedNode && (addedNode.nodeType === 1) && (addedNode.tagName === 'DIV') && addedNode.id && addedNode.className && (addedNode.id === addedNode.className)) {
+      if (addedNode && (addedNode.nodeType === 1) && (addedNode.tagName === 'DIV') && addedNode.id && addedNode.className && (addedNode.className.indexOf(addedNode.id) !== -1)) {
         const firstNodeChild = addedNode.firstChild;
         if (firstNodeChild) {
           let css = '.sovetnik-changer:after{content:""!important;position:absolute!important;top:0!important;right:0!important;left:0!important;bottom:-1px!important;z-index:2147483647!important;cursor:default!important;';
